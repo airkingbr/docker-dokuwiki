@@ -23,12 +23,14 @@ docker run \
 ```
 
 
-Para verificar o status:
+Após a instalação, acesse:
 
 ```sh
-$ docker ps
+http://<seuip>/install.php
 ```
  
+
+E complete a instalação!
 
 Go! 
 
