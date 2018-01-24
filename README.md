@@ -11,11 +11,11 @@ Container Docker para DokuWiki.
 
 
 ```sh
-mkdir data -p
+docker volume create dokuwiki-data
 docker run \
   --restart always \
   -itd \
-  -v $('pwd')/data:/var/dokuwiki-storage \
+  -v dokuwiki-data:/var/dokuwiki-storage \
   -p 80:80 \
   --name=nexthop-dokouwiki \
   --hostname nexthop-dokuwiki \
